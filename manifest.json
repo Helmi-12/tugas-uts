@@ -1,0 +1,50 @@
+{
+  "name": "NJ Aluminium - SPK SAW & Visual Commerce 3D",
+  "short_name": "NJ Aluminium",
+  "description": "Sistem Pendukung Keputusan Pemilihan Produk NJ Aluminium (Metode SAW), Visual Commerce 3D/WebAR, dan Manajemen Kargo Volumetrik",
+  "start_url": "index.php?action=home",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0284c7",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "productivity", "education"],
+  "shortcuts": [
+    {
+      "name": "Hitung Budget SAW",
+      "short_name": "Hitung Budget",
+      "description": "Cari rekomendasi mebel aluminium sesuai budget",
+      "url": "index.php?action=rekomendasi",
+      "icons": [{ "src": "assets/images/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Katalog 3D",
+      "short_name": "Katalog",
+      "description": "Lihat model 3D furnitur aluminium",
+      "url": "index.php?action=katalog",
+      "icons": [{ "src": "assets/images/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Kargo Volumetrik",
+      "short_name": "Kargo",
+      "description": "Kalkulator ongkos kirim kargo",
+      "url": "index.php?action=kalkulator_kargo",
+      "icons": [{ "src": "assets/images/icon-192.svg", "sizes": "192x192" }]
+    }
+  ]
+}
+

@@ -1,0 +1,130 @@
+/* Custom Styling for Sistem Pendukung Keputusan Mebel Aluminium & Visual Commerce */
+
+:root {
+    --primary: #0284c7;
+    --primary-dark: #0369a1;
+    --secondary: #d97706;
+    --dark-surface: #0f172a;
+    --card-surface: #ffffff;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    margin: 0;
+    padding: 0;
+}
+
+/* Glassmorphism accents */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.dark-glass-panel {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(51, 65, 85, 0.6);
+}
+
+/* Ranking badges */
+.rank-badge-1 {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35);
+}
+
+.rank-badge-2 {
+    background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(100, 116, 139, 0.3);
+}
+
+.rank-badge-3 {
+    background: linear-gradient(135deg, #b45309 0%, #78350f 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(120, 53, 15, 0.25);
+}
+
+/* 3D Model viewer container */
+.viewer-3d-box {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background: radial-gradient(circle at center, #ffffff 0%, #f1f5f9 100%);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Matrix Table Styling */
+.matrix-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.875rem;
+}
+
+.matrix-table th {
+    background: #f1f5f9;
+    color: #334155;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid #cbd5e1;
+    text-align: left;
+}
+
+.matrix-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+.matrix-table tr:hover td {
+    background-color: #f8fafc;
+}
+
+.matrix-table .highlight-cell {
+    background-color: #e0f2fe;
+    font-weight: 600;
+    color: #0369a1;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Print styles for Bab 4 Skripsi / Tugas Akhir */
+@media print {
+    nav, footer, .no-print, .btn-print-hide {
+        display: none !important;
+    }
+    body {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+    .print-only {
+        display: block !important;
+    }
+    .card, .glass-panel {
+        border: 1px solid #000000 !important;
+        box-shadow: none !important;
+    }
+}
+

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" />
+  
+  <!-- Subtle aluminum frame border -->
+  <rect x="24" y="24" width="464" height="464" rx="90" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="6" />
+
+  <!-- Layered Isometric Aluminium Furniture Symbol -->
+  <g transform="translate(256, 240)">
+    <!-- Base Platform -->
+    <path d="M 0, -80 L 140, 0 L 0, 80 L -140, 0 Z" fill="#ffffff" fill-opacity="0.15" />
+    
+    <!-- Cabinet Box Back -->
+    <path d="M -100, -30 L 0, -85 L 100, -30 L 100, 70 L 0, 125 L -100, 70 Z" fill="#0f172a" fill-opacity="0.3" />
+
+    <!-- Left Flap / Door -->
+    <path d="M -100, -30 L 0, -85 L 0, 70 L -100, 125 Z" fill="#ffffff" fill-opacity="0.9" />
+    
+    <!-- Right Flap / Door (Golden / Anodized Accent) -->
+    <path d="M 0, -85 L 100, -30 L 100, 125 L 0, 70 Z" fill="url(#glowGrad)" />
+
+    <!-- Handles -->
+    <circle cx="-35" cy="20" r="8" fill="#0369a1" />
+    <circle cx="35" cy="20" r="8" fill="#78350f" />
+    
+    <!-- Sparkle / SPK AI Symbol -->
+    <path d="M 110, -110 L 120, -85 L 145, -75 L 120, -65 L 110, -40 L 100, -65 L 75, -75 L 100, -85 Z" fill="#fde047" />
+  </g>
+
+  <!-- Typography -->
+  <text x="256" y="445" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="40" text-anchor="middle" fill="#ffffff" letter-spacing="3">NJ ALUMINIUM</text>
+</svg>
+
